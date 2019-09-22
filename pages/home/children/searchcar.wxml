@@ -1,0 +1,56 @@
+<view class="content">
+<!-- 汽车展示 -->
+<view class="gwq_show_car view_hide{{show == 1 ? 'view_show' : ''}}">
+  <!-- 搜索头 -->
+  <view class='gwq_page_row'>
+  <view class="gwq_search" style="width:260px;">
+  <view class="df gwq_search_arr" >
+  <icon class="gwq_searchcion" size='20' type='search'></icon>
+  <input class="gwq_search_input" placeholder="请输入汽车类型或品牌" value="{{searchValue}}" auto-focus bindinput="bindKeyInput"/>
+  </view>
+  </view>
+  <!-- <view class='gwq_sousuo' bindtap="getData">搜索</view> -->
+  <!-- <view class="sortByPay" bindtap="getSelect">价格</view> -->
+  <Select prop-array='{{selectCarsArray}}' class="sortByPoint" bind:myget='getSelect'></Select>
+  </view>
+  <!-- 汽车主体 -->
+  <view class="gwq_add_cars">
+  <view class="gwq_add_one" wx:for="{{tempSearch}}">
+  <navigator url="/pages/home/children/pay?pay={{item.pay}}&pic='{{item.src}}&phone={{item.phone}}&owner={{item.owner}}&type={{item.type}}&brand={{item.brand}}&msg={{item.msg}} " hover-class="none">
+  <image class="pic" src="{{item.src}}" style="width:80px;height:80px;"></image>
+  <view class="type">{{item.type}}</view>
+  <view class="msg">{{item.msg}}</view>
+  <view class="phone">{{item.phone}}</view>
+  <view class="pay">{{item.pay}}￥</view>
+  </navigator>
+  </view>
+  </view>
+</view>
+<!-- 合作租车公司展示 -->
+<view class="gwq_show_company view_hide{{show == 2 ? 'view_show' : ''}}">
+  <!-- 搜索头 -->
+  <view class='gwq_page_row'>
+  <view class="gwq_search">
+  <view class="df gwq_search_arr">
+  <icon class="gwq_searchcion" size='20' type='search'></icon>
+  <input class="gwq_search_input" placeholder="请输入店家店名或附加信息" value="{{searchValue}}"  bindinput="bindKeyInput"/>
+  </view>
+  </view>
+  <!-- <view class='gwq_sousuo' bindtap="getData">搜索</view> -->
+  <Select prop-array='{{selectCompanyArray}}' class="sortByPoint" bind:myget='getSelect'></Select>
+  </view>
+  <!-- 公司主体 -->
+  <view class="gwq_add_company">
+  <view class="gwq_add_one" wx:for="{{tempSearch}}">
+  <navigator url="/pages/cart/children/cooperative?title={{item.title}}&pic='{{item.pic}}&addition={{item.addition}}&opentime={{item.opentime}}&distance={{item.distance}}&longitude={{longitude}}&latitude={{latitude}}&phone={{item.phone}}&shopkeeper={{item.shopkeeper}} " hover-class="none">
+  <image class="pic" src="{{item.pic}}" style="width:80px;height:80px;"></image>
+  <view class="title">{{item.title}}</view>
+  <view class="addition">{{item.addition}}</view>
+  <view class="opentime">{{item.opentime}}</view>
+  <view class="distance">距离{{item.distance}}km</view>
+  </navigator>
+  </view>
+  </view>
+</view>
+
+</view>

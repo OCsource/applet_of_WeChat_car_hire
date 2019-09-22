@@ -1,0 +1,46 @@
+<!--pages/cart/cart.wxml-->
+<view class="content">
+<!-- 搜索模块 -->
+  <view class='gwq_page_row'>
+    <view class="gwq_location" bindtap="getAllAddress">{{address}}
+      <image src="/imgs/world.png" style="width : 13px; height : 13px; "></image>
+    </view>
+    <view class="gwq_search">
+      <view class="df gwq_search_arr">
+        <icon class="gwq_searchcion" size='20' type='search'></icon>
+        <input class="gwq_search_input" placeholder="请输入要输入的信息" value="{{searchValue}}" bindinput="bindKeyInput"/>
+      </view>
+    </view>
+    <view class='gwq_sousuo' bindtap="getData">搜索</view>
+  </view>
+  <!-- 小模块 -->
+  <view class="gwq_model_cart" >
+    <view class="gwq_model_one" wx:for="{{srcs}}">
+      <image class="onePic" src="{{item.src}}"></image>
+      <text class="oneTxt">{{item.word}}</text>
+    </view>
+  </view>
+  <!-- 合作公司 -->
+  <view class="gwq_company_nav">
+    <text class="gwq_select_txt" style="float:left;margin-left:18%;">排序条件：</text>
+    <Select prop-array='{{selectArray}}' style="float:left; background-color: #FFFFFF;border-radius: 10px;" bind:myget='getSelect'></Select>
+    <view class="gwq_more_select">
+      <checkbox-group bindchange="listenCheckboxChange">
+      <label wx:for-items="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+      </checkbox-group>
+    </view>
+  </view>
+  <view class="gwq_add_company">
+    <view class="gwq_add_one" wx:for="{{firmsTemp}}">
+    <navigator url="/pages/cart/children/cooperative?title={{item.title}}&pic='{{item.pic}}&addition={{item.addition}}&opentime={{item.opentime}}&distance={{item.distance}}&longitude={{longitude}}&latitude={{latitude}}&phone={{item.phone}}&shopkeeper={{item.shopkeeper}} " hover-class="none">
+      <image class="pic" src="{{item.pic}}" style="width:80px;height:80px;"></image>
+      <view class="title">{{item.title}}</view>
+      <view class="addition">{{item.addition}}</view>
+      <view class="opentime">{{item.opentime}}</view>
+      <view class="distance">距离{{item.distance}}km</view>
+    </navigator>
+    </view>
+  </view>
+</view>

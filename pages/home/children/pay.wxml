@@ -1,0 +1,33 @@
+<view class="content">
+  <view class="gwq_look_hd">
+  <!--通过数据绑定的方式动态获取js数据-->
+  <image src="{{pic}}" class="pic"/>
+  </view>
+  <view class="gwq_look_bd">
+  <view class="gwq_look_item">
+  <text class="car_txt">定金：</text>
+  <text class="car_msg">{{pay}}￥</text>
+  </view>
+  <view class="gwq_look_item">
+  <text class="car_txt">车类型：</text>
+  <text class="car_msg">{{type}}</text>
+  </view>
+  <view class="gwq_look_item">
+  <text class="car_txt">车品牌：</text>
+  <text class="car_msg">{{brand}}</text>
+  </view>
+  <view class="gwq_look_item">
+  <text class="car_txt">车主：</text>
+  <text class="car_msg">{{owner}}</text>
+  </view>
+  <view class="gwq_look_item">
+  <text class="car_txt">车主电话：</text>
+  <text class="car_msg">{{phone}}</text>
+  </view>
+  <view class="gwq_look_item">
+  <text class="car_txt">附加信息（注意项）：</text>
+  <view class="gwq_textArea">{{msg}}</view>
+  </view>
+  </view>
+  <button type="primary" bindtap="payForMoney" class="gwq_button_anniu" style="margin-top: 10px;">支付定金</button>
+</view>

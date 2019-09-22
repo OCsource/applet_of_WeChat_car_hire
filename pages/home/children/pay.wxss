@@ -1,0 +1,36 @@
+page {
+  padding-bottom: 20px;
+  background-color: #E6E6EA;
+}
+.gwq_look_hd {
+  width: 100%;
+  height : 240px;
+  display:flex; 
+  justify-content: center; 
+}
+.gwq_look_hd .pic{
+  width:260px;
+  height : 200px;
+  margin-top: 20px;
+}
+.gwq_look_bd {
+  margin-top : 10px; 
+  width: 100%;
+  /* height : 500px; */
+}
+.gwq_look_item {
+  background-color: #FFFFFF;
+  width : 90%;
+  margin: auto;
+  margin-bottom:6px;
+  padding: 5px;
+  font-size: 15px;
+}
+.gwq_look_item .car_msg {
+  float: right;
+  height : 24px;
+  margin-right : 10px; 
+}
+.gwq_look_item .gwq_textArea {
+  font-size: 16px;
+}

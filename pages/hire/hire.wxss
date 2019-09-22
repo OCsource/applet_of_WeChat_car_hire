@@ -1,0 +1,36 @@
+page {
+  padding-bottom: 20px;
+  background-color: #E6E6EA;
+}
+/* 图片显示模块 */
+.gwq_hire_hd {
+  width: 100%;
+  height : 240px;
+  display:flex; 
+  justify-content: center; 
+}
+.gwq_hire_hd .pic{
+  width:260px;
+  height : 200px;
+  margin-top: 20px;
+}
+.gwq_hire_bd {
+  margin-top : 10px; 
+  width: 100%;
+  /* height : 500px; */
+}
+.gwq_hire_item {
+  background-color: #FFFFFF;
+  width : 90%;
+  /* height : 50px; */
+  margin: auto;
+  margin-bottom:6px;
+  padding: 9px;
+  font-size: 16px;
+}
+.gwq_hire_item .car_detail {
+  float: right;
+  height : 24px;
+  width: 180px;
+  margin-right : 10px; 
+}

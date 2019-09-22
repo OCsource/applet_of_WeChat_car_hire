@@ -1,0 +1,82 @@
+page {
+  padding-bottom: 20px;
+  background-color: #E6E6EA;
+}
+.gwq_show_company {
+  display: block;
+  float: left;
+  height: 328px;
+}
+/* 布局二 */
+.gwq_show_hd {
+  width: 90%;
+  height: 160px;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.gwq_show_hd image{
+  float: left;
+  width:150px; 
+  height:150px;
+}
+.gwq_show_hd .title {
+  float: left;
+  width: 50%;
+  line-height: 120rpx;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 3%;
+}
+.gwq_show_hd .addtxt {
+  width: 50%;
+  float: left;
+  line-height: 60rpx;
+  margin-left: 3%;
+}
+.gwq_how_map {
+  float: left;
+  display: block;
+  width: 90%; 
+  height: 260px; 
+  margin-left: 5%;
+}
+.gwq_how_map map {
+  width: 100%;
+  height: 260px;
+}
+/* 布局一 */
+/* .title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 115rpx;
+  display: block;
+}
+.center_pic {
+  width: 100%;
+  height : 202px;
+  display:flex; 
+  justify-content: center; 
+}
+.center_pic image {
+  width:200px; 
+  height:200px;
+}
+.addtxt {
+  text-align: center;
+  line-height: 60rpx;
+  display: block;
+} */
+.gwq_show_one {
+  background-color: #FFFFFF;
+  width: 87.5%;
+  height: 20px;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  padding: 5px;
+}
+.gwq_show_one .txt {
+  float: right;
+  margin-right: 5px;
+}

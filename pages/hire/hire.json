@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Select": "/Component/select/select"
+  },
+  "navigationBarTitleText": "出租车辆"
+}

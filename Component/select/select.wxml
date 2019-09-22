@@ -1,0 +1,10 @@
+<!--Component/select/select.wxml-->
+<view class='gwq_selectBox'>
+    <view class='gwq_sContent' bindtap='selectToggle'>
+        <view class='gwq_sTxt'>{{nowText}}</view>
+        <image src='/imgs/vision.png'  class='gwq_sImg'  animation="{{animationData}}"></image>
+    </view>
+    <view class='gwq_sList' wx:if="{{selectShow}}">
+        <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='' class='gwq_sItem' bindtap='setText'>{{item.text}}</view>
+    </view>
+</view>

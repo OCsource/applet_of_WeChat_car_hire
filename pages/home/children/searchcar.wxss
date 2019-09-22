@@ -1,0 +1,143 @@
+page {
+  padding-bottom: 20px;
+  background-color: #E6E6EA;
+}
+/* 搜索模块 */
+.gwq_search_input{
+  border: 1rpx solid #E6E6EA;
+  /* background-color: #FFFFFF; */
+}
+.gwq_search{
+  width: 80%;
+}
+.gwq_search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.gwq_search_arr input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+.gwq_sousuo {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+/* .sortByPay {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+} */
+.gwq_page_row{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+.gwq_searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+/* 出租车模块 */
+.gwq_add_cars {
+  width : 100%;
+  margin-top: 10px;
+  margin-left: 2.5%; 
+}
+.gwq_add_one .type {
+  margin-left: 5px;
+  float: left;
+  width: 60%;
+  font-size: 20px;
+}
+.gwq_add_one .msg {
+  margin-left: 5px;
+  float: left;
+  font-size: 13px;
+  width: 70%;
+  margin-top : 6px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+}
+.gwq_add_one .phone {
+  margin-left: 5px;
+  float: left;
+  font-size: 12px;
+  width: 30%;
+  margin-top : 12px;
+}
+.gwq_add_one .pay {
+  float: right;
+  font-size: 12px;
+  margin-top: 12px;
+}
+/* 租车公司模块 */
+.gwq_add_company {
+  width : 100%;
+  margin-top: 10px;
+  margin-left: 2.5%; 
+}
+.gwq_add_one {
+  background-color: #FFFFFF;
+  width: 95%;
+  display: block;
+  margin: 8px 0px;
+  height: 85px;
+}
+.gwq_add_one .title {
+  margin-left: 5px;
+  float: left;
+  width: 60%;
+  font-size: 20px;
+}
+.gwq_add_one .addition {
+  margin-left: 5px;
+  float: left;
+  font-size: 13px;
+  width: 70%;
+  margin-top : 6px;
+}
+.gwq_add_one .opentime {
+  margin-left: 5px;
+  float: left;
+  font-size: 12px;
+  width: 30%;
+  margin-top : 12px;
+}
+.gwq_add_one .distance {
+  float: right;
+  font-size: 12px;
+  margin-top: 12px;
+}
+/* 共有模块 */
+.gwq_add_one .pic {
+  float: left;
+}
+.view_show {
+  display: block;
+}
+.view_hide {
+  display: none;
+}
+.sortByPoint {
+  margin-left: 15rpx;
+  width: 26%;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  background-color: #E6E6EA;
+}

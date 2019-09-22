@@ -1,0 +1,39 @@
+<view class="content">
+  <!-- 首页图片模块 -->
+  <view class="gwq_page">
+      <view class="gwq_section__ctn">
+        <image style="width: 100%; background-color: #eeeeee;" src="{{src}}" mode="scaleToFill"></image>
+      </view>
+  </view>
+  <!-- 搜索模块 -->
+  <view class='gwq_page_row'>
+    <view class="gwq_search">
+      <view class="df gwq_search_arr">
+        <icon class="gwq_searchcion" size='20' type='search'></icon>
+        <input class="gwq_search_input" placeholder="请输入要输入的信息" value="{{searchValue}}" bindinput="bindKeyInput"/>
+      </view>
+    </view>
+    <view class='gwq_sousuo' bindtap="getData">搜索</view>
+  </view>
+  <!-- 其他服务模块 -->
+  <view class="gwq_other_service">
+  <text class="gwq_other_service_text">其他服务</text>
+  <view class="gwq_other_service_icons" wx:for="{{srcs}}">
+  <view class="gwq_other_service_icon">
+  <image class="iconPic" src="{{item.src}}"></image>
+  <text class="iconTxt">{{item.word}}</text>
+  </view>
+  </view>
+  </view>
+  <!-- 热门汽车模块 -->
+  <view class='gwq_hot_car'>
+  <text class="gwq_hot_car_text">热门车型</text>
+  <view class="gwq_hot_car_pics_box" wx:for="{{srcs}}">
+    <view class="gwq_hot_car_pic" wx:if="{{item.hot > 500}}">
+      <navigator url="/pages/home/children/pay?pay={{item.pay}}&pic='{{item.src}}&phone={{item.phone}}&owner={{item.owner}}&type={{item.type}}&brand={{item.brand}}&msg={{item.msg}} " hover-class="none">
+      <image class="pic" src="{{item.src}}" bindtap='tapLogin'></image>
+      </navigator>
+    </view>
+  </view>
+  </view>
+</view>

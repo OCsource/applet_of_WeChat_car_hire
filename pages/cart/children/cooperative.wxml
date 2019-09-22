@@ -1,0 +1,34 @@
+<view class="content">
+  <view class="gwq_show_company">
+  <!-- <text class="title">{{title}}</text>
+  <view class="center_pic">
+  <image src="{{pic}}"></image>
+  </view>
+  <text class="addtxt">{{addition}}</text> -->
+  <view class="gwq_show_hd">
+  <image src="{{pic}}"></image>
+  <text class="title">{{title}}</text>
+  <text class="addtxt">{{addition}}</text>
+  </view>
+  <view class="gwq_show_one">
+  开业时间：
+  <text class="txt">{{opentime}}</text>
+  </view>
+  <view class="gwq_show_one">
+  距离你：
+  <text class="txt">{{distance}}km</text>
+  </view>
+  <view class="gwq_show_one">
+  联系店家：
+  <text class="txt">{{phone}}</text>
+  </view>
+  <view class="gwq_show_one">
+  店主：
+  <text class="txt">{{shopkeeper}}</text>
+  </view>
+  </view> 
+  <view class="gwq_how_map">
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" bindcontroltap="controltap" markers="{{markers}}" bindregionchange="regionchange" show-location>
+  </map>
+  </view>
+</view>

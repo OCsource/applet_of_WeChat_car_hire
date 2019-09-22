@@ -1,0 +1,51 @@
+/* Component/select/select.wxss */
+.gwq_selectBox{
+  width: 100px;
+}
+.gwq_sContent{
+    /* border: 1px solid #e2e2e2; */
+    font-size: 16px;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.gwq_sImg{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    width: 16px;
+    height: 9px;
+    transition: all .3s ease;
+}
+.gwq_sTxt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:0 20px 0 6px;
+    font-size: 14px;
+}
+.gwq_sList{
+    background: white;
+    width: inherit;
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    box-sizing: border-box;
+    z-index: 3;
+    max-height: 120px;
+    overflow: auto;
+}
+.gwq_sItem{
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #e2e2e2;
+    padding: 0 6px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.gwq_sItem:first-child{
+    border-top: none;
+}
